@@ -8,6 +8,7 @@ let questions = [
       "2010",
       "2008",
       "2014",
+      "2017",
     ]
   },
     {
@@ -17,95 +18,96 @@ let questions = [
     options: [
       "Studio Bones",
       "Studio Ghibli",
-      "Studio mappa",
+      "Studio Mappa",
+      "Studio Q",
     ]
   },
     {
     numb: 3,
     question: " Directed..... ",
-    answer: "Hypertext Preprocessor",
+    answer: "By Hiromasa Yonebayashi",
     options: [
-      "By Hiromasa Yonebayashi ",
-      "By   hola holola ",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+      "By Hiromasa Yonebayashi",
+      "By Hola Holola",
+      "By Shinji Ikari",
+      "Pop buurman"
     ]
   },
     {
     numb: 4,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
+    question: "Is het gebaseerd op een novel?",
+    answer: "Ja",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      "Ja",
+      "Nee",
+      "IDK",
+      "Misschine"
     ]
   },
     {
     numb: 5,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
+    question: "Wie heeft de novel geschreven?",
+    answer: "Joan G. Robinson",
     options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
+      "Quency deli",
+      "Joan G. Robinson",
+      "Paul grid",
+      "Hirsomia Aiod"
     ]
   },
   {
     numb: 6,
-    question: "What does HTML stand for?",
-    answer: "Hyper Text Markup Language",
+    question: "Op welke jaar was de novel geschreven?",
+    answer: "1967",
     options: [
-      "Hyper Text Preprocessor",
-      "Hyper Text Markup Language",
-      "Hyper Text Multiple Language",
-      "Hyper Tool Multi Language"
+      "1930",
+      "1967",
+      "1960",
+      "1989"
     ]
   },
     {
     numb: 7,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
+    question: "Waar is de huis van marnie op gebaseerd?",
+    answer: "Villa Suikyuso",
     options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
+      "Villa Suikyuso",
+      "Villa Sedny",
+      "Villa Toun",
+      "Villa Edward"
     ]
   },
     {
     numb: 8,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
+    question: "Hoe veel prijzen heeft de film gewonnen?",
+    answer: "1",
     options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+      "3",
+      "1",
+      "4",
+      "Geen"
     ]
   },
     {
     numb: 9,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
+    question: "Hoe lang is de film?",
+    answer: "1h 43m",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      "1h 43m",
+      "1h 59m",
+      "1h 29m",
+      "1h 53m"
     ]
   },
     {
     numb: 10,
-    question: "What does XML stand for?",
+    question: " Heeft de film open einde?",
     answer: "eXtensible Markup Language",
     options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
+      "Ja",
+      "Nee",
+      "IDK",
+      "Misschine"
     ]
   },
 ];
@@ -320,6 +322,6 @@ function startTimerLine(time){
 
 function queCounter(index){
     //creating a new span tag and passing the question number and total question
-    let totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
+    let totalQueCounTag = '<span><p>'+ index +'</p> van <p>'+ questions.length +'</p> Vragen</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
 }
