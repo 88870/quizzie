@@ -7,6 +7,7 @@
 
 body{
    background-color: #0B0C10 ;
+   background-image: url('imgg/kj.jpeg');
    font-family: Comic Sans MS, Comic Sans, cursive;
 }
 
@@ -363,7 +364,12 @@ footer button.show{
     border: 1px solid #c5c6c7;
     transition: all 0.3s ease;
 }
-
+#eindfoto{
+    float: right;
+    margin-top: 20px;
+    width: 70%;
+    height: 80%;
+}
 .buttons button.restart{
     color: #ffffff;
     background: #45A29E;
@@ -382,3 +388,4 @@ footer button.show{
     color: #fff;
     background: #c5c6c7;
 }
+
