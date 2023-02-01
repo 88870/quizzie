@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Awesome Quiz App | CodingNepal</title>
+    <title>When Marnie was there</title>
     <link rel="stylesheet" href="marnie.css">
-    <link rel="stylesheet" href="marnie.css"/>
 </head>
+
 <body>
-   
-    <div class="start_btn"><button>Start Quiz</button></div>
- 
+
+    <div class="start_btn">
+        <button class="buttonn">Start quiz</button><br>
+        <input type="text" id="name" placeholder="Vul jouw naam in" >
+    </div>
+
     <div class="info_box">
-        <div class="info-title"><span>Regels</span></div>
+        <div class="info-title"><span>Wat je moet weten</span></div>
         <div class="info-list">
-            <div class="info">1. Je hebt allen <span>15 sec</span> voor elke vraag.</div>
-            <div class="info">2. Je kan je antwoord niet wijzigen.</div>
-            <div class="info">3. Je moet de quiz afmaken.</div>
-            <div class="info">4. Je punten zie je aan het eind.</div>   
+            <div class="info">- Links boven heb een knop voor muziek uit de film.
+                <p>Vergeet die niet aan te zetten!
+                    <script src="https://kit.fontawesome.com/d02b5e525a.js" crossorigin="anonymous"></script>
+                    <i class="fa-regular fa-face-smile" style="color:#5ce1e6 ;"></i>
+                </p>
+            </div>
+            <div class="info">- Je hebt allen <span>15 sec</span> voor elke vraag.</div>
+            <div class="info">- Je kan je antwoord niet wijzigen.</div>
+            <div class="info">- Je moet de quiz afmaken.</div>
+            <div class="info">- Je scoren zie je aan het eind.</div>
         </div>
         <div class="buttons">
-            <button class="quit">Exit Quiz</button>
-            <button class="restart">Continue</button>
+            <a href="marnie.html"><button class="quit">Terug</button></i></a>
+            <button class="restart">Ga door</button>
+
+
         </div>
     </div>
-    
+
     <div class="quiz_box">
         <header>
-            <div class="title">Awesome Quiz Application</div>
+            <div class="title">When Marnie was there quiz</div>
             <div class="timer">
                 <div class="time_left_txt">Tijd over</div>
                 <div class="timer_sec">15</div>
@@ -35,11 +47,8 @@
             <div class="time_line"></div>
         </header>
         <section>
-            <div class="que_text">
-              
-            </div>
-            <div class="option_list">
-            </div>
+            <div class="que_text"></div>
+            <div class="option_list"></div>
         </section>
         <footer>
             <div class="total_que">
@@ -53,14 +62,31 @@
             <i class="fas fa-crown"></i>
         </div>
         <div class="complete_text">Je hebt alle vragen beantwoordt!</div>
-        <div class="score_text">
-        </div>
+        <div class="score_text"></div>
+        <img id="resultimg" width="80%" />
         <div class="buttons">
             <button class="restart">Opnieuw spelen</button>
-            <button class="quit">Quit Quiz</button>
+            <button class="quit">Stop quiz</button>
         </div>
     </div>
-    <script src="marnie.js"></script>
+
+    <audio id="myAudio">
+        <source src="media/audio.mp3" type="audio/mpeg">
+    </audio>
+    <button onclick="playAudio()" type="button" class="buttoonn">
+        <script src="https://kit.fontawesome.com/d02b5e525a.js" crossorigin="anonymous"></script>
+        <i class="fa-solid fa-play" id="icon"></i>Play
+    </button>
+    <button onclick="pauseAudio()" type="button" class="buttoonn">
+        <script src="https://kit.fontawesome.com/d02b5e525a.js" crossorigin="anonymous"></script>
+        <i class="fa-solid fa-pause" id="icon"></i>Pause
+    </button>
+    <a href="index.html"><button class="buttoonnn">
+            <script src="https://kit.fontawesome.com/d02b5e525a.js" crossorigin="anonymous"></script>
+            <i class="fa-solid fa-house" id="icon"></i>Home
+        </button></i></a>
+
     <script src="marnie.js"></script>
 </body>
+
 </html>
